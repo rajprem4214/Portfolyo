@@ -1,20 +1,20 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "",
+  "title": "Prem Raj",
+  "name": "Prem Raj",
+  "ascii": "Prem Raj",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "rajprem4214",
+    "linkedin": "rajprem4214"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
+  "email": "rajprem4214@gmail.com",
+  "ps1_hostname": "rajprem4214",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "repo": "https://github.com/rajprem4214",
+  "resume_url": "https://drive.google.com/file/d/1ofy_8frTqR9NxRyDuMWuqkFFEmO3_eGh/view?usp=sharing",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "paypal": "Bohot Paisa Hai !!",
+    "patreon": "Sachme Bhai !!! Kaafi Paisa Hai !!"
   },
   "colors": {
     "light": {
