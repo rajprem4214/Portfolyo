@@ -1,11 +1,11 @@
 {
-  "name": "liveterm",
+  "name": "premportfolio",
   "version": "0.1.0",
   "license": "MIT",
   "author": {
-    "name": "Vincent Wu",
-    "url": "https://cveinnt.com",
-    "email": "contact@wensenwu.com"
+    "name": "Prem Raj",
+    "url": "https://premraj.vercel.com",
+    "email": "rajprem4214@gmail.com"
   },
   "scripts": {
     "dev": "next dev",

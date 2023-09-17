@@ -6,16 +6,32 @@ import config from '../../../config.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
+  // const commands = Object.keys(bin).sort().join(', ');
+  const commands = [
+    { command: 'about', job: 'To know about me' },
+    { command: 'projects', job: 'To see my projects' },
+    { command: 'github', job: 'To check my commits' },
+    { command: 'linkedin', job: 'To stalk my Linkedin' },
+    { command: 'resume', job: 'For Resume' },
+    { command: 'email', job: 'For collaboration' },
+    { command: 'whoami', job: 'Who am I' },
+    { command: 'weather', job: 'Check if its raining' },
+    { command: 'quote', job: 'Start your day with a quote' },
+    { command: 'google', job: 'To search anything' },
+    { command: 'date', job: 'To check your date' },
+    { command: 'cd', job: 'Try it' },
+    { command: 'sudo', job: 'To wander in heaven' },
+  ];
   var c = '';
-  for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
-      c += Object.keys(bin).sort()[i - 1] + '\n';
-    } else {
-      c += Object.keys(bin).sort()[i - 1] + '\n';
-    }
+  for (let i = 0; i < commands.length; i++) {
+    // if (i % 7 === 0) {
+    //   c += Object.keys(bin).sort()[i - 1] + '\n';
+    // } else {
+    //   c += Object.keys(bin).sort()[i - 1] + '\n';
+    // }
+    c += commands[i].command + ' - ' + commands[i].job + '\n';
   }
-  return `Welcome! Here are all the available commands:
+  return `Welcome Here are all the available commands:
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
@@ -24,19 +40,18 @@ Type 'sumfetch' to display summary.
 };
 
 // Redirection
-export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
-  return 'Opening Github repository...';
-};
+// export const repo = async (args: string[]): Promise<string> => {
+//   window.open(`${config.repo}`);
+//   return 'Opening Github repository...';
+// };
 
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
-Welcome to my website!
+Welcome to my website
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'resume' - my latest resume.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -45,13 +60,10 @@ export const resume = async (args: string[]): Promise<string> => {
 };
 
 // Donate
-// export const donate = async (args: string[]): Promise<string> => {
-//   return `thank you for your interest. 
-// here are the ways you can support my work:
-// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-// `;
-// };
+export const donate = async (args: string[]): Promise<string> => {
+  return `Bhagwaan ka diya sab kuch hai !
+`;
+};
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -136,7 +148,7 @@ export const vi = async (args: string[]): Promise<string> => {
 
 export const sudo = async (args?: string[]): Promise<string> => {
   window.open('https://www.youtube.com/watch?v=MxGItnRhsBI', '_blank'); // ...I'm sorry
-  return `Jai Shree Ram !!! `;
+  return `Jai Shree Ram  `;
 };
 
 // Banner
